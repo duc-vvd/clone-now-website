@@ -1,0 +1,32 @@
+.main-left-home {
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.main-left-home .local {
+    font-size: 15px;
+}
+
+.main-left-home .icon-search {
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-image: url("https://cdn.glitch.com/c31c0916-94ae-4f0f-8115-6a77f2008a66%2Fsearch.svg?v=1593048014630");
+    filter: invert(1);
+}
+.category-list-filter a {
+    display: inline-block;
+    text-decoration: none;
+}
+.category-list-filter .category-item {
+    font-size: 15px;
+    padding: 5px 15px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+.category-list-filter .category-item:hover {
+    background: #ffffff;
+    color: #000000;
+}
