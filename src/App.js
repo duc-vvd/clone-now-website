@@ -8,7 +8,9 @@ import {
 } from "react-router-dom";
 import Header from './components/Header';
 import Home from './pages/Home';
-import Food from './pages/Food';
+import FoodPage from './pages/FoodPage';
+import DrinkPage from './pages/DrinkPage';
+import StreetFood from './pages/StreetFood';
 
 function App() {
   return (
@@ -17,13 +19,13 @@ function App() {
       <Header/>
     <Switch>
           <Route path="/food">
-            <Food/>
+            <FoodPage/>
           </Route>
           <Route path="/drink">
-            <div>đồ uống</div>
+            <DrinkPage/>
           </Route>
           <Route path="/streetfood">
-            <div>ăn vặt</div>
+            <StreetFood/>
           </Route>
           <Route path="/">
             <Home/>
