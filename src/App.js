@@ -13,6 +13,8 @@ import FoodPage from './pages/FoodPage';
 import DrinkPage from './pages/DrinkPage';
 import StreetFood from './pages/StreetFood';
 import CartPage from './pages/CartPage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
         <div className="App">
           <Header />
           <Switch>
+          <Route path="/login">
+              <LoginPage />
+            </Route>
+          <Route path="/register">
+              <RegisterPage />
+            </Route>
             <Route path="/cart">
               <CartContext.Consumer>
                 {(props) => <CartPage value={props}/>}
