@@ -1,0 +1,39 @@
+.menu-footer {
+    line-height: 25px;
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+    font-size: 13px;
+    color: #0288d1;
+}
+.menu-footer li:hover {
+    color: #4d5ba3;
+}
+.apps {
+    border: 1px solid #d7d7d7;
+    padding: 6px 0;
+    width: 120px;
+    font-size: 15px;
+}
+.apps img {
+    width: 24px;
+    margin: 0 12px;
+}
+.logo-footer img {
+    width: 70px;
+    height: 70px;
+}
+.title-block{
+    font-size: 16px;
+}
+.social-ico img {
+    width: 28px;
+    opacity: .5;
+}
+.font12 {
+    font-size: 12px;
+    color: #959595;
+}
+.block-last {
+    font-size: 12px;
+}

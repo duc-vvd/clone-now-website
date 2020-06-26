@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Header from './components/Header';
 import Home from './pages/Home';
+import Food from './pages/Food';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Header/>
     <Switch>
           <Route path="/food">
-            <div>đồ ăn</div>
+            <Food/>
           </Route>
           <Route path="/drink">
             <div>đồ uống</div>
