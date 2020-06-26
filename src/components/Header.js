@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {CartContext} from '../contexts/CartContext';
 import {
   Collapse,
   Navbar,
@@ -6,20 +7,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
   Button
 } from 'reactstrap';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 import './Header.css';
 
 export default (props) => {
@@ -48,8 +38,20 @@ export default (props) => {
             <NavItem>
               <Link to="/streetfood" className="nav-link">Ăn vặt</Link>
             </NavItem>
+            <CartContext.Consumer>
+              {
+                ({cartItems}) => {
+                  if(cartItems.length){
+                    return <NavItem>
+                    <Link to="/cart" className="nav-link">Giỏ hàng({cartItems.length})</Link>
+                  </NavItem>
+                  }
+                  return;
+                }
+              }
+            </CartContext.Consumer>
             <NavItem className="d-flex alight-items-center p-2 ml-auto">
-              <img className="header-icon-search" src="https://cdn.glitch.com/c31c0916-94ae-4f0f-8115-6a77f2008a66%2Fsearch.svg?v=1593048014630"/>
+              <img className="header-icon-search" src="https://cdn.glitch.com/c31c0916-94ae-4f0f-8115-6a77f2008a66%2Fsearch.svg?v=1593048014630" />
             </NavItem>
             <NavItem>
               <Button outline color="primary">Đăng nhập</Button>{' '}
