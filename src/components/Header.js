@@ -14,8 +14,15 @@ import './Header.css';
 
 export default (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const login = JSON.parse(localStorage.getItem("login"));
+  const [isLogin, setIsLogin] = useState(login.isSuccess);
   const toggle = () => setIsOpen(!isOpen);
+  const onLogout = () => {
+    localStorage.setItem("login", JSON.stringify({isSuccess: false}));
+    setIsLogin(JSON.parse(localStorage.getItem("login")).isSuccess);
+    window.location = "/";
+  };
+  
 
   return (
     <Navbar color="light" light expand="md" >
@@ -53,9 +60,12 @@ export default (props) => {
             <NavItem className="d-flex alight-items-center p-2 ml-auto">
               <img className="header-icon-search" src="https://cdn.glitch.com/c31c0916-94ae-4f0f-8115-6a77f2008a66%2Fsearch.svg?v=1593048014630" />
             </NavItem>
-            <NavItem>
-              <Button outline color="primary">Đăng nhập</Button>{' '}
-            </NavItem>
+            {!isLogin && <NavItem>
+              <Link to="/login"><Button outline color="primary">Đăng nhập</Button>{' '}</Link>
+            </NavItem>}
+            {isLogin && <NavItem>
+              <Link to="/login"><Button outline color="primary" onClick={onLogout}>Đăng Xuất</Button>{' '}</Link>
+            </NavItem>}
           </Nav>
         </Collapse>
       </div>

@@ -1,0 +1,35 @@
+[33mcommit dbb7e42e17f3d11307658ad67778ed70f48e0054[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: VuVietDuc <vuvietduc9x@gmail.com>
+Date:   Fri Jun 26 23:31:30 2020 +0700
+
+    create login page and register page
+
+[33mcommit d27459ee2282c09091458eb52565be4465984a1b[m
+Author: VuVietDuc <vuvietduc9x@gmail.com>
+Date:   Fri Jun 26 19:28:23 2020 +0700
+
+    create cart page
+
+[33mcommit d73bdab5d4033a27dbd3ca3cc0e236205804b1f0[m
+Author: VuVietDuc <vuvietduc9x@gmail.com>
+Date:   Fri Jun 26 11:26:15 2020 +0700
+
+    create food page, drink page and street food page
+
+[33mcommit 0c0ae28b7fd6038f30bde991d3528dcfb9a11bac[m
+Author: VuVietDuc <vuvietduc9x@gmail.com>
+Date:   Fri Jun 26 09:45:05 2020 +0700
+
+    Create footer compponent
+
+[33mcommit 169b147ae0318ccd0ae4db60ca78a0093b7d60d6[m
+Author: VuVietDuc <vuvietduc9x@gmail.com>
+Date:   Thu Jun 25 23:39:26 2020 +0700
+
+    Create home page, header and card component
+
+[33mcommit 783717f215da77749f6f8c32753004fca81b201a[m
+Author: VuVietDuc <vuvietduc9x@gmail.com>
+Date:   Tue Jun 23 18:29:44 2020 +0700
+
+    Initialize project using Create React App

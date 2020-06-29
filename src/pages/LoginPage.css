@@ -45,6 +45,7 @@
     border: 1px solid #ffffff;
     padding: 2px 12px;
     border-radius: 18px;
+    color: #ffffff;
 }
 .wrap-btn-2:active {
     opacity: .5;
