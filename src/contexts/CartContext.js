@@ -44,13 +44,13 @@ export class CartProvider extends Component {
     }
 
     onPay() {
-        localStorage.removeItem("cartItems");
         const login = JSON.parse(localStorage.getItem("login"));
         if(!login.isSuccess) {
             alert("Bạn vui lòng đăng nhập!");
             window.location = "/login";
         }else {
             alert("Giao dịch thành công.")
+            localStorage.removeItem("cartItems");
             window.location = "/";
         }
         this.setState({
